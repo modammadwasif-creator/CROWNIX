@@ -1,0 +1,366 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+
+<title>CROWNIX | Premium Caps Collection</title>
+
+<link rel="icon" type="image/png"
+    href="https://i.ibb.co/jvmz0HvB/Screenshot-20261031-211634.png">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="csps.css">
+
+
+</head>
+
+<body data-page="caps">
+
+<header class="header">
+    <a class="brand" href="index.html">
+        <img
+            src="https://i.ibb.co/jvmz0HvB/Screenshot-20261031-211634.png"
+            alt="CROWNIX Logo">
+        <span class="brand-name">
+            CROWNIX
+            <small>CAPS & WATCHES</small>
+        </span>
+    </a>
+
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="watches.html">Watches</a>
+    <a href="caps.html" class="active">Caps</a>
+</nav>
+
+
+</header>
+
+<main>
+
+<section class="crownix-animated-hero">
+
+
+<div class="hero-visual" id="heroVisual">
+
+    <img
+        src="images/crownix-caps-hero.png"
+        alt="CROWNIX premium caps collection"
+        id="heroScene">
+
+    <div class="hero-dark-overlay"></div>
+
+    <div class="hero-copy">
+        <span class="hero-eyebrow" id="heroEyebrow">
+            PREMIUM CAPS COLLECTION
+        </span>
+
+        <h1 id="heroHeading">
+            CROWNIX <span>CAPS</span>
+        </h1>
+
+        <p id="heroDescription">
+            Wear the Attitude. Own Your Crown.
+        </p>
+
+        <a href="#capsProductGrid" class="hero-shop-btn">
+            SHOP COLLECTION →
+        </a>
+    </div>
+
+    <div class="hero-stage-label" id="heroStageLabel">
+        01 / THE MALE EDIT
+    </div>
+
+    <div class="hero-progress">
+        <span id="heroProgressBar"></span>
+    </div>
+
+    <div class="hero-controls">
+        <button type="button" id="heroPrevious">←</button>
+        <button type="button" id="heroNext">→</button>
+    </div>
+
+    <div class="hero-pagination" id="heroPagination">
+        <button class="active" data-slide="0"></button>
+        <button data-slide="1"></button>
+        <button data-slide="2"></button>
+        <button data-slide="3"></button>
+    </div>
+
+</div>
+
+<div class="hero-features">
+    <div>✦ Premium Quality</div>
+    <div>♧ Fast Delivery</div>
+    <div>✓ Cash on Delivery</div>
+    <div>♧ Customer Support</div>
+</div>
+
+
+</section>
+
+<!-- STYLE EDITORIAL -->
+
+<section class="caps-editorial">
+
+    <div class="editorial-heading">
+        <span>THE STYLE GUIDE</span>
+        <h2>FIND YOUR <em>FIT.</em></h2>
+        <p>Different styles. One CROWNIX attitude.</p>
+    </div>
+
+    <div class="editorial-grid">
+
+        <article class="editorial-card editorial-men">
+            <div class="editorial-card-content">
+                <span>01 / STREET STYLE</span>
+                <h3>MEN'S<br>COLLECTION</h3>
+                <p>Confident looks for everyday wear.</p>
+                <a href="#capsCollection">EXPLORE STYLE →</a>
+            </div>
+        </article>
+
+        <article class="editorial-card editorial-women">
+            <div class="editorial-card-content">
+                <span>02 / MODERN STYLE</span>
+                <h3>WOMEN'S<br>COLLECTION</h3>
+                <p>Make your own style statement.</p>
+                <a href="#capsCollection">EXPLORE STYLE →</a>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCT COLLECTION -->
+
+<section class="caps-products-section" id="capsCollection">
+
+    <div class="caps-section-heading">
+        <span>CROWNIX EXCLUSIVE</span>
+        <h2>THE CAP <em>COLLECTION</em></h2>
+        <p>Find the cap that completes your look.</p>
+    </div>
+
+    <div class="caps-filter-bar">
+
+        <button class="caps-filter active" data-filter="all">
+            ALL CAPS
+        </button>
+
+        <button class="caps-filter" data-filter="black">
+            BLACK
+        </button>
+
+        <button class="caps-filter" data-filter="light">
+            LIGHT COLORS
+        </button>
+
+        <button class="caps-filter" data-filter="streetwear">
+            STREETWEAR
+        </button>
+
+    </div>
+
+    <div class="caps-product-grid" id="capsProductGrid"></div>
+
+</section>
+
+
+</main>
+
+<!-- PRODUCT DETAILS MODAL -->
+
+<div class="caps-modal-backdrop" id="capsProductModal">
+
+<section class="caps-product-modal" role="dialog"
+    aria-modal="true" aria-label="Cap product details">
+
+    <button type="button" class="caps-modal-close"
+        id="capsModalClose">×</button>
+
+    <div id="capsProductDetails"></div>
+
+</section>
+
+</div>
+
+<!-- CUSTOMER ORDER MODAL -->
+
+<div class="caps-modal-backdrop" id="capsOrderModal">
+
+
+<section class="caps-order-modal" role="dialog"
+    aria-modal="true" aria-label="Customer order form">
+
+    <button type="button" class="caps-modal-close"
+        id="capsOrderClose">×</button>
+
+    <p class="caps-order-eyebrow">CROWNIX CHECKOUT</p>
+
+    <h2>Complete Your <em>Order.</em></h2>
+
+    <div id="capsOrderSummary"></div>
+
+    <form id="capsOrderForm">
+
+        <label>
+            Full Name
+            <input id="capsCustomerName"
+                type="text" required
+                placeholder="Your full name">
+        </label>
+
+        <label>
+            Mobile / WhatsApp
+            <input id="capsCustomerPhone"
+                type="tel" required
+                placeholder="03XX XXXXXXX">
+        </label>
+
+        <label>
+            City
+            <input id="capsCustomerCity"
+                type="text" required
+                placeholder="Your city">
+        </label>
+
+        <label>
+            Complete Address
+            <textarea id="capsCustomerAddress"
+                required placeholder="Your complete address"></textarea>
+        </label>
+
+        <label>
+            Quantity
+            <input id="capsOrderQuantity"
+                type="number" min="1" max="20"
+                value="1" required>
+        </label>
+
+        <div class="caps-total-box">
+            <span>Payment Method</span>
+            <strong>Cash on Delivery</strong>
+            <span>Delivery Charges: Rs. 200</span>
+            <strong id="capsGrandTotal">Rs. 650</strong>
+        </div>
+
+        <button type="submit" class="caps-gold-button caps-submit">
+            CONFIRM ORDER ON WHATSAPP →
+        </button>
+
+    </form>
+
+</section>
+
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+
+<div class="footer-container">
+
+    <div class="footer-main">
+
+        <div class="footer-brand-section">
+
+            <a class="footer-logo" href="index.html">
+                <img
+                    src="https://i.ibb.co/jvmz0HvB/Screenshot-20261031-211634.png"
+                    alt="CROWNIX Logo">
+            </a>
+
+            <h2>CROWNIX</h2>
+
+            <span class="footer-tagline">
+                PREMIUM CAPS & WATCHES
+            </span>
+
+            <p>
+                Wear Your Crown. Premium Style,
+                Everyday Confidence.
+            </p>
+
+            <div class="footer-cod">
+                CASH ON DELIVERY AVAILABLE
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+            <h3>OWNERS & PARTNERS</h3>
+            <p class="footer-owner">Muhammad Wasif</p>
+            <p class="footer-owner">Mudassir</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>CONTACT US</h3>
+
+            <a href="tel:+923322100970">
+                Wasif: +92 332 2100970
+            </a>
+
+            <a href="tel:+923121032352">
+                Mudassir: +92 312 1032352
+            </a>
+
+            <a href="mailto:modammadwasif@gmail.com">
+                modammadwasif@gmail.com
+            </a>
+        </div>
+
+        <div class="footer-column">
+            <h3>QUICK LINKS</h3>
+            <a href="index.html">Home</a>
+            <a href="watches.html">Watches</a>
+            <a href="caps.html">Caps</a>
+        </div>
+
+    </div>
+
+    <div class="footer-social">
+
+        <h3>CONNECT WITH CROWNIX</h3>
+
+        <a href="https://www.tiktok.com/@crownixbrand1"
+            target="_blank" rel="noopener noreferrer">
+            FOLLOW US ON TIKTOK
+        </a>
+
+        <a href="https://chat.whatsapp.com/I54nFhdz3LD5taSB12Czaw"
+            target="_blank" rel="noopener noreferrer">
+            JOIN OUR WHATSAPP GROUP
+        </a>
+
+    </div>
+
+    <div class="footer-highlight">
+        ✦ CROWNIX — STYLE MEETS QUALITY ✦
+    </div>
+
+    <div class="footer-bottom">
+        <p>© <span id="capsYear"></span> CROWNIX. All Rights Reserved.</p>
+        <p>CAPS · WATCHES · CASH ON DELIVERY</p>
+        <a href="#" class="back-top">BACK TO TOP ↑</a>
+    </div>
+
+</div>
+
+
+</footer>
+
+<script src="caps.js"></script>
+
+</body>
+</html>

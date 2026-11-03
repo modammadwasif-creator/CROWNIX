@@ -1,0 +1,741 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+
+    <title>CROWNIX | Premium Caps & Watches</title>
+
+    <meta name="description"
+          content="Shop premium caps and watches at CROWNIX. Watches starting from Rs. 500. Cash on Delivery available.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="64x64" href=" https://i.ibb.co/jvmz0HvB/Screenshot-20261031-211634.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+ 
+    <script src="ss.js"></script>
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement">
+        👑 CROWNIX — PREMIUM STYLE, EVERYDAY CONFIDENCE
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <a class="brand" href="#home">
+        
+<img
+        src="https://i.ibb.co/jvmz0HvB/Screenshot-20261031-211634.png"
+        alt="CROWNIX Logo">
+            <span class="brand-name">
+                CROWNIX
+                <small>CAPS & WATCHES</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <nav id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#watches">Watches</a>
+            <a href="#caps">Caps</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-copy reveal">
+
+                <p class="eyebrow">
+                    <span></span>
+                    WEAR YOUR CROWN
+                </p>
+
+                <h1>
+                    Own Your<br>
+                    <em>Signature Style.</em>
+                </h1>
+
+                <p class="hero-text">
+                    Discover premium watches and stylish caps designed
+                    for people who want to stand out.
+                    Your style, your identity, your crown.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="button button-gold" href="#collections">
+                        Explore Collection <span>↗</span>
+                    </a>
+
+                    <a class="text-link" href="#about">
+                        Discover CROWNIX →
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+                    <span class="note-line"></span>
+                    PREMIUM STYLE. AFFORDABLE PRICES.
+                </div>
+
+            </div>
+
+            <div class="hero-visual reveal">
+
+                <div class="hero-image-frame">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1000&q=85"
+                        alt="Premium wristwatch">
+
+                </div>
+
+                <div class="hero-side-label">
+                    ♛ CROWNIX SIGNATURE COLLECTION
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+                <span>01 / CROWNIX COLLECTION</span>
+                <span class="scroll-cue">SCROLL TO DISCOVER ↓</span>
+                <span>CAPS · WATCHES · STYLE</span>
+            </div>
+
+        </section>
+
+        <!-- TRUST STRIP -->
+        <section class="trust-strip">
+
+            <div>
+                <b>✦</b>
+                <span>PREMIUM STYLE</span>
+            </div>
+
+            <div>
+                <b>◇</b>
+                <span>SELECTED PRODUCTS</span>
+            </div>
+
+            <div>
+                <b>↗</b>
+                <span>CASH ON DELIVERY</span>
+            </div>
+
+            <div>
+                <b>◎</b>
+                <span>WHATSAPP SUPPORT</span>
+            </div>
+
+        </section>
+
+        <!-- COLLECTIONS -->
+        <section class="section products-section" id="collections">
+
+            <div class="section-heading reveal">
+
+                <div>
+                    <p class="eyebrow">THE CROWNIX EDIT</p>
+
+                    <h2>
+                        Find Your<br>
+                        <em>Signature.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    Premium caps and watches for every style,
+                    every occasion and every budget.
+                </p>
+
+            </div>
+
+            <!-- SEARCH AND FILTERS -->
+            <div class="toolbar">
+
+                
+
+                <div class="filter-row" id="categoryFilters">
+
+                    <button class="filter active" data-category="all">
+                        All Products
+                    </button>
+
+                   
+                </div>
+
+               
+            </div>
+
+            <!-- WATCHES -->
+            <div class="collection-heading" id="watches">
+
+                <div>
+                    <p class="eyebrow">TIMELESS COLLECTION</p>
+                    <h2>Premium <em> Cap + Watches.</em></h2>
+                </div>
+
+                <span class="starting-price">
+                    STARTING FROM <strong>Rs. 500</strong>
+                </span>
+
+            </div>
+
+            <!-- PRODUCT GRID -->
+            <div class="product-grid" id="productGrid">
+
+                <div class="loading-state">
+                    <span class="loader"></span>
+                    <p>Loading CROWNIX collection...</p>
+                </div>
+
+            </div>
+
+            <p class="empty-state hidden" id="emptyProducts">
+                No products found. Please try another search.
+            </p>
+<a href="watches.html" class="button button-gold">
+    EXPLORE COLLECTION
+</a>
+            <!-- PREMIUM CAPS COLLECTION -->
+
+<div class="collection-heading caps-heading" id="caps">
+
+
+<div class="caps-heading-copy">
+
+    <p class="eyebrow">EVERYDAY STREET STYLE</p>
+
+    <h2>
+        Premium <em>Caps.</em>
+    </h2>
+
+    <p class="caps-description">
+        Elevate your everyday look with the CROWNIX cap collection.
+    </p>
+
+    <span class="starting-price">
+        FIND YOUR STYLE · OWN YOUR CROWN
+    </span>
+
+</div>
+
+<div class="caps-heading-visual">
+
+    <img
+        src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=85"
+        alt="Premium street style cap"
+        loading="lazy">
+
+    <div class="caps-image-label">
+        <span>♛ CROWNIX</span>
+        <strong>STREET STYLE COLLECTION</strong>
+    </div>
+
+</div>
+
+
+</div>
+
+        </section>
+
+        <!-- EDITORIAL BANNER -->
+        <section class="editorial">
+
+            <div class="editorial-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1200&q=85"
+                    alt="Luxury watch collection"
+                    loading="lazy">
+
+            </div>
+
+            <div class="editorial-copy reveal">
+
+                <p class="eyebrow">THE CROWNIX EXPERIENCE</p>
+
+                <h2>
+                    Your Style.<br>
+                    <em>Your Crown.</em>
+                </h2>
+
+                <p>
+                    From everyday essentials to statement pieces,
+                    discover products that match your personality.
+                </p>
+
+                <a href="#collections" class="text-link">
+                    Shop the Collection →
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section section" id="about">
+
+            
+<img
+        src="https://i.ibb.co/jvmz0HvB/Screenshot-20261031-211634.png"
+        alt="CROWNIX Logo">
+
+            <div class="about-copy reveal">
+
+                <p class="eyebrow">WELCOME TO CROWNIX</p>
+
+                <h2>
+                    More Than<br>
+                    <em>Just Style.</em>
+                </h2>
+
+                <p>
+                    CROWNIX brings together premium-looking watches
+                    and fashionable caps in one place.
+
+                    Our goal is simple: help you express your style
+                    with products that fit your everyday life and budget.
+                </p>
+
+                <a href="#contact" class="button button-outline">
+                    Contact Us →
+                </a>
+
+            </div>
+<div class="about-stat reveal">
+
+
+<img
+    src="https://i.ibb.co/jvmz0HvB/Screenshot-20261031-211634.png"
+    alt="CROWNIX Logo"
+    class="about-stat-logo"
+>
+
+<p>
+    YOUR STYLE.<br>
+    YOUR MOMENT.<br>
+    <strong>YOUR CROWN.</strong>
+</p>
+ 
+
+</div>
+
+
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="features-section section">
+
+            <div class="section-heading reveal">
+
+                <div>
+                    <p class="eyebrow">THE CROWNIX PROMISE</p>
+                    <h2>Shopping Made <em>Simple.</em></h2>
+                </div>
+
+            </div>
+
+            <div class="features-grid">
+
+                <article class="feature-card">
+                    <span>⌚</span>
+                    <h3>Stylish Watches</h3>
+                    <p>Explore different watch styles with prices starting from Rs. 500.</p>
+                </article>
+
+                <article class="feature-card">
+                    <span>🧢</span>
+                    <h3>Premium Caps</h3>
+                    <p>Find caps to match your daily outfits and personal style.</p>
+                </article>
+
+                <article class="feature-card">
+                    <span>📦</span>
+                    <h3>Cash on Delivery</h3>
+                    <p>Place your order and pay according to the delivery arrangements.</p>
+                </article>
+
+                <article class="feature-card">
+                    <span>💬</span>
+                    <h3>WhatsApp Support</h3>
+                    <p>Contact our team for product details and order assistance.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section section" id="contact">
+
+            <div>
+
+                <p class="eyebrow">LET'S CONNECT</p>
+
+                <h2>
+                    Need Help?<br>
+                    <em>Talk to Us.</em>
+                </h2>
+
+                <p>
+                    Have questions about our caps, watches or delivery?
+                    Contact CROWNIX for assistance.
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <span class="contact-icon">↗</span>
+
+                <p class="eyebrow">QUICK & PERSONAL</p>
+
+                <h3>Talk to CROWNIX</h3>
+
+                <p>
+                    For product information, orders and customer support.
+                </p>
+
+                <a
+                    class="button button-gold"
+                    id="contactWhatsApp"
+                    href="#"
+                    target="_blank"
+                    rel="noopener">
+
+                    Chat on WhatsApp →
+                </a>
+
+                <small>
+                    WhatsApp number will be configured in the JavaScript file.
+                </small>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- CROWNIX OFFICIAL PREMIUM FOOTER -->
+
+<footer class="site-footer">
+
+
+<div class="footer-container">
+
+    <div class="footer-main">
+
+        <!-- BRAND INFORMATION -->
+        <div class="footer-brand-section">
+
+            <a class="footer-logo" href="#home">
+                <img
+                    src="https://i.ibb.co/jvmz0HvB/Screenshot-20261031-211634.png"
+                    alt="CROWNIX Official Logo">
+            </a>
+
+            <h2>CROWNIX</h2>
+            <span class="footer-tagline">PREMIUM CAPS & WATCHES</span>
+
+            <p>
+                Wear Your Crown. Premium Style, Everyday Confidence.
+                Discover premium caps and stylish watches with CROWNIX.
+            </p>
+
+            <div class="footer-cod">
+                🚚 CASH ON DELIVERY AVAILABLE
+            </div>
+
+        </div>
+
+        <!-- OWNERS -->
+        <div class="footer-column">
+            <h3>OWNERS & PARTNERS</h3>
+
+            <p class="footer-owner">Muhammad Wasif</p>
+            <p class="footer-owner">Mudassir</p>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-column">
+            <h3>CONTACT US</h3>
+
+            <a href="tel:+923322100970">
+              Muhammad Wasif: +92 332 2100970
+            </a>
+
+            <a href="tel:+923121032352">
+                Mudassir: +92 312 1032352
+            </a>
+
+            <a href="mailto:modammadwasif@gmail.com">
+                modammadwasif@gmail.com
+            </a>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+            <h3>QUICK LINKS</h3>
+
+            <a href="#home">Home</a>
+            <a href="#collections">Shop Collections</a>
+            <a href="#about">About Us</a>
+            
+        </div>
+
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="footer-social">
+
+        <h3>CONNECT WITH CROWNIX</h3>
+
+        <a
+            href="https://www.tiktok.com/@crownixbrand1"
+            target="_blank"
+            rel="noopener noreferrer">
+            🎵 FOLLOW US ON TIKTOK
+        </a>
+
+        <a
+            href="https://chat.whatsapp.com/I54nFhdz3LD5taSB12Czaw"
+            target="_blank"
+            rel="noopener noreferrer">
+            💬 JOIN OUR WHATSAPP GROUP
+        </a>
+
+    </div>
+
+    <!-- BRAND STATEMENT -->
+    <div class="footer-highlight">
+        ✦ CROWNIX — STYLE MEETS QUALITY ✦
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="year"></span> CROWNIX.
+            All Rights Reserved.
+        </p>
+
+        <p>CAPS · WATCHES · CASH ON DELIVERY</p>
+
+        <a href="#home" class="back-top">
+            BACK TO TOP ↑
+        </a>
+
+    </div>
+
+</div>
+
+
+</footer>
+
+    <!-- NOTIFICATION -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- PRODUCT DETAILS MODAL -->
+    <div class="modal-backdrop hidden" id="productModal">
+
+        <section
+            class="modal product-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalProductName">
+
+            <button
+                class="modal-close"
+                data-close="productModal"
+                aria-label="Close">×</button>
+
+            <div id="productModalContent"></div>
+
+        </section>
+
+    </div>
+
+    <!-- ORDER MODAL -->
+    <div class="modal-backdrop hidden" id="orderModal">
+
+        <section
+            class="modal order-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="orderTitle">
+
+            <button
+                class="modal-close"
+                data-close="orderModal"
+                aria-label="Close">×</button>
+
+            <p class="eyebrow">YOUR CROWNIX ORDER</p>
+
+            <h2 id="orderTitle">
+                Complete Your <em>Order.</em>
+            </h2>
+
+            <div id="orderProductSummary" class="order-summary"></div>
+
+            <form id="orderForm">
+
+                <input type="hidden" id="orderProductId">
+                <input type="hidden" id="orderProductName">
+                <input type="hidden" id="orderUnitPrice">
+
+                <div class="form-grid">
+
+                    <label>
+                        Full Name
+                        <input
+                            id="customerName"
+                            required
+                            maxlength="100"
+                            autocomplete="name"
+                            placeholder="Enter your full name">
+                    </label>
+
+                    <label>
+                        Mobile / WhatsApp
+                        <input
+                            id="customerPhone"
+                            required
+                            maxlength="20"
+                            autocomplete="tel"
+                            placeholder="03XX XXXXXXX">
+                    </label>
+
+                    <label>
+                        City
+                        <input
+                            id="customerCity"
+                            required
+                            maxlength="80"
+                            autocomplete="address-level2"
+                            placeholder="Your city">
+                    </label>
+
+                    <label>
+                        Quantity
+                        <input
+                            id="orderQuantity"
+                            type="number"
+                            min="1"
+                            max="20"
+                            value="1"
+                            required>
+                    </label>
+
+                    <label class="full-field">
+                        Complete Delivery Address
+                        <textarea
+                            id="customerAddress"
+                            required
+                            maxlength="500"
+                            autocomplete="street-address"
+                            rows="3"
+                            placeholder="House, street, area and delivery instructions"></textarea>
+                    </label>
+
+                </div>
+
+                <div class="totals">
+
+                    <div>
+                        <span>Subtotal</span>
+                        <strong id="orderSubtotal">Rs. 0</strong>
+                    </div>
+
+                    <div>
+                        <span>Delivery Charges</span>
+                        <strong id="orderDelivery">Rs. 200</strong>
+                    </div>
+
+                    <div class="grand-total">
+                        <span>Total</span>
+                        <strong id="orderTotal">Rs. 200</strong>
+                    </div>
+
+                </div>
+
+                <div class="payment-choice">
+                    <span>Payment Method</span>
+                    <strong>Cash on Delivery (COD)</strong>
+                </div>
+
+                <button
+                    class="button button-gold submit-order"
+                    id="submitOrder"
+                    type="submit">
+
+                    Place Order & Continue to WhatsApp →
+
+                </button>
+
+                <p class="form-note">
+                    WhatsApp will open with your order details.
+                    You must press Send in WhatsApp to message the store.
+                </p>
+
+            </form>
+
+        </section>
+
+    </div>
+
+    <!-- SHOPPING BAG MODAL -->
+    <div class="modal-backdrop hidden" id="bagModal">
+
+        <section
+            class="modal bag-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="bagTitle">
+
+            <button
+                class="modal-close"
+                data-close="bagModal"
+                aria-label="Close">×</button>
+
+            <p class="eyebrow">YOUR SHORTLIST</p>
+
+            <h2 id="bagTitle">
+                Your <em>Bag.</em>
+            </h2>
+
+            <p>
+                Keep track of products you like and continue shopping.
+            </p>
+
+            <div id="bagItems"></div>
+
+            <button class="button button-gold" id="closeBag">
+                Continue Shopping →
+            </button>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
